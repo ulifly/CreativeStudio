@@ -19,10 +19,10 @@ export default function HeroSection() {
             transition={{ duration: 0.6 }}
           >
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold font-montserrat leading-tight">
-              We bring your <span className="text-blue-500 font-playfair italic">creative vision</span> to life
+              Traemos tu <span className="text-blue-500 font-playfair italic">vision creativa</span> a la vida
             </h1>
             <p className="text-lg md:text-xl opacity-90">
-              Premium production, design, and marketing services for brands that want to stand out. Our new platform is launching soon.
+            Producción, diseño y servicios de marketing premium para marcas que quieren destacar. Nuestra nueva plataforma se lanzará pronto.
             </p>
             
             {/* Call to action buttons */}
@@ -31,28 +31,28 @@ export default function HeroSection() {
                 href="#connect" 
                 className="bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 px-6 rounded-md transition-colors"
               >
-                Connect With Us
+                Conecta con nosotros
               </a>
               <a 
                 href="#contact" 
                 className="bg-white/20 backdrop-blur-sm hover:bg-white/30 text-white font-medium py-3 px-6 rounded-md transition-colors"
               >
-                Get in Touch
+                contactanos
               </a>
             </div>
             
             <div className="flex flex-wrap items-center gap-6">
               <div className="flex items-center gap-2">
                 <CheckCircle className="text-blue-500" size={20} />
-                <span>Premium Quality</span>
+                <span>Calidad Premium</span>
               </div>
               <div className="flex items-center gap-2">
                 <CheckCircle className="text-blue-500" size={20} />
-                <span>Creative Excellence</span>
+                <span>Exelencia Creativa</span>
               </div>
               <div className="flex items-center gap-2">
                 <CheckCircle className="text-blue-500" size={20} />
-                <span>Dedicated Support</span>
+                <span>Soporte Dedicado</span>
               </div>
             </div>
           </motion.div>
@@ -70,8 +70,8 @@ export default function HeroSection() {
             />
             <div className="absolute inset-0 bg-gradient-to-t from-slate-800 to-transparent opacity-60"></div>
             <div className="absolute bottom-6 left-6 right-6">
-              <span className="px-3 py-1 bg-blue-600 text-white text-sm rounded-full">Featured Project</span>
-              <h3 className="text-white text-xl font-bold mt-2">Award-winning Commercial Production</h3>
+              <span className="px-3 py-1 bg-blue-600 text-white text-sm rounded-full">Proyecto destacado</span>
+              <h3 className="text-white text-xl font-bold mt-2">Producción Comercial Galardonada</h3>
             </div>
           </motion.div>
         </div>

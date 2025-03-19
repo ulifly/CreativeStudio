@@ -1,4 +1,5 @@
 import { useState } from "react";
+// eslint-disable-next-line no-unused-vars
 import { motion } from "framer-motion";
 import LightboxGallery from "./LightboxGallery.jsx";
 import { Button } from "../components/ui/Button.jsx";

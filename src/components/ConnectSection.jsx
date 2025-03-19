@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-unused-vars
 import { motion } from "framer-motion";
 import { Facebook, Instagram, Twitter, Linkedin, MessageSquare } from "lucide-react";
 import { FaWhatsapp } from "react-icons/fa";
