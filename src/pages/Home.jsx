@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import Navbar from "../components/Navbar.jsx";
-import NavbarES from "../components/NavbarES.jsx";
+import NavbarES from "../components/NavbarEs.jsx";
 import HeroSection from "../components/HeroSection.jsx";
 import HeroSectionES from "../components/HeroSectionEs.jsx";
 import ServicesSection from "../components/ServicesSection.jsx";
@@ -10,7 +10,7 @@ import TestimonialsSection from "../components/TestimonialsSection.jsx";
 import ConnectSection from "../components/ConnectSection.jsx";
 import CTASection from "../components/CTASection.jsx";
 import ContactSection from "../components/ContactSection.jsx";
-import Footer from "../components/Footer";
+import Footer from "../components/Footer.jsx";
 
 export default function Home() {
 
@@ -22,7 +22,6 @@ export default function Home() {
       setLanguage('es');
     }
   }, []);
-
 
 
   return (
@@ -39,12 +38,12 @@ export default function Home() {
           <>
             <HeroSectionES />
             <ServicesSection title="Servicios" />
-            <PortfolioSection title="Portafolio" />
-            <AboutSection title="Acerca de" />
-            <TestimonialsSection title="Testimonios" />
-            <ConnectSection title="Conéctate" />
-            <CTASection title="Llamada a la acción" />
-            <ContactSection title="Contacto" />
+            {/* <PortfolioSection title="Portafolio" /> */}
+            {/* <AboutSection title="Acerca de" /> */}
+            {/* <TestimonialsSection title="Testimonios" /> */}
+            {/* <ConnectSection title="Conéctate" /> */}
+            {/* <CTASection title="Llamada a la acción" /> */}
+            {/* <ContactSection title="Contacto" /> */}
           </>
         ) : (
           <>

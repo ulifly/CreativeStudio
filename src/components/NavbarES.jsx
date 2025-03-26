@@ -21,17 +21,17 @@ export default function Navbar() {
         <div className="flex justify-between items-center">
           <div className="flex items-center">
             <Link href="/" className="text-2xl font-bold font-montserrat text-primary flex items-center">
-              <span className="text-blue-600">Creative</span>Studio
+              <span className="text-blue-600">A1</span>Studio
             </Link>
           </div>
           
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
-            <a href="#services" className="font-medium hover:text-blue-600 transition-colors">Servicios</a>
-            <a href="#portfolio" className="font-medium hover:text-blue-600 transition-colors">Portfolio</a>
-            <a href="#about" className="font-medium hover:text-blue-600 transition-colors">Acerca</a>
-            <a href="#contact" className="font-medium hover:text-blue-600 transition-colors">Contacto</a>
-            <a href="#connect" className="font-medium hover:text-blue-600 transition-colors">Conecta con nosotros</a>
+            <Link href="/#services" className="font-medium hover:text-blue-600 transition-colors">Servicios</Link>
+            {/* <a href="#portfolio" className="font-medium hover:text-blue-600 transition-colors">Portfolio</a> */}
+            <Link href="/AboutEs" className="font-medium hover:text-blue-600 transition-colors">Acerca</Link>
+            <Link href="/ContactEs" className="font-medium hover:text-blue-600 transition-colors">Contacto</Link>
+            <Link href="/ConnectEs" className="font-medium hover:text-blue-600 transition-colors">Conecta con nosotros</Link>
           </div>
           
           {/* Mobile Menu Button */}
@@ -48,41 +48,41 @@ export default function Navbar() {
         {isOpen && (
           <div className="md:hidden mt-4 bg-white rounded-lg shadow-lg absolute left-4 right-4">
             <div className="flex flex-col space-y-3 py-4 px-4">
-              <a 
-                href="#services" 
+              <Link 
+                href="/#services" 
                 className="font-medium hover:text-blue-600 transition-colors py-2"
                 onClick={closeMenu}
               >
                 Servicios
-              </a>
-              <a 
+              </Link>
+              {/* <a 
                 href="#portfolio" 
                 className="font-medium hover:text-blue-600 transition-colors py-2"
                 onClick={closeMenu}
               >
                 Portfolio
-              </a>
-              <a 
-                href="#about" 
+              </a> */}
+              <Link 
+                href="/AboutEs" 
                 className="font-medium hover:text-blue-600 transition-colors py-2"
                 onClick={closeMenu}
               >
                 Acerca de
-              </a>
-              <a 
-                href="#contact" 
+              </Link>
+              <Link 
+                href="/contact" 
                 className="font-medium hover:text-blue-600 transition-colors py-2"
                 onClick={closeMenu}
               >
                 Contacto
-              </a>
-              <a 
+              </Link>
+              <Link 
                 href="#connect" 
                 className="font-medium hover:text-blue-600 transition-colors py-2"
                 onClick={closeMenu}
               >
                 Conecta con nosotros
-              </a>
+              </Link>
             </div>
           </div>
         )}

@@ -92,7 +92,7 @@ export default function ServicesSection() {
                   <h3 className="text-xl font-bold font-montserrat mb-3">{service.title}</h3>
                   <p className="text-slate-600 mb-6">{service.description}</p>
                   <a href="#" className="text-blue-600 font-medium inline-flex items-center group-hover:underline">
-                    Learn More <ArrowRight className="ml-2 h-4 w-4" />
+                    {/* Learn More <ArrowRight className="ml-2 h-4 w-4" /> */}
                   </a>
                 </CardContent>
               </Card>

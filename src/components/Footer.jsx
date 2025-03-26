@@ -13,9 +13,9 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
   
   return (
-    <footer className="bg-slate-800 text-white pt-16 pb-8">
+    <footer className="bg-slate-800 text-white pt-5 pb-8">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 mb-12">
           <div>
             <Link href="/" className="text-2xl font-bold font-montserrat flex items-center mb-4">
               <span className="text-blue-500">Creative</span>Studio
@@ -63,7 +63,7 @@ export default function Footer() {
             </div>
           </div>
           
-          <div>
+          {/* <div>
             <h3 className="text-lg font-bold mb-4">Services</h3>
             <ul className="space-y-3">
               <li><a href="#" className="text-gray-300 hover:text-white transition-colors">Video Production</a></li>
@@ -73,9 +73,9 @@ export default function Footer() {
               <li><a href="#" className="text-gray-300 hover:text-white transition-colors">Web Design</a></li>
               <li><a href="#" className="text-gray-300 hover:text-white transition-colors">Social Media</a></li>
             </ul>
-          </div>
+          </div> */}
           
-          <div>
+          {/* <div>
             <h3 className="text-lg font-bold mb-4">Quick Links</h3>
             <ul className="space-y-3">
               <li><a href="#" className="text-gray-300 hover:text-white transition-colors">Home</a></li>
@@ -85,7 +85,7 @@ export default function Footer() {
               <li><a href="#contact" className="text-gray-300 hover:text-white transition-colors">Contact</a></li>
               <li><a href="#connect" className="text-gray-300 hover:text-white transition-colors">Connect With Us</a></li>
             </ul>
-          </div>
+          </div> */}
           
           <div>
             <h3 className="text-lg font-bold mb-4">Contact</h3>

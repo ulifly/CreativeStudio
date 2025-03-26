@@ -33,12 +33,12 @@ export default function HeroSection() {
               >
                 Conecta con nosotros
               </a>
-              <a 
+              {/* <a 
                 href="#contact" 
                 className="bg-white/20 backdrop-blur-sm hover:bg-white/30 text-white font-medium py-3 px-6 rounded-md transition-colors"
               >
                 contactanos
-              </a>
+              </a> */}
             </div>
             
             <div className="flex flex-wrap items-center gap-6">
@@ -64,14 +64,14 @@ export default function HeroSection() {
             transition={{ duration: 0.6, delay: 0.2 }}
           >
             <img 
-              src="https://images.unsplash.com/photo-1522542550221-31fd19575a2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" 
+              src="../../public/logo.jpeg" 
               alt="Professional video production team" 
               className="w-full h-full object-cover"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-slate-800 to-transparent opacity-60"></div>
             <div className="absolute bottom-6 left-6 right-6">
-              <span className="px-3 py-1 bg-blue-600 text-white text-sm rounded-full">Proyecto destacado</span>
-              <h3 className="text-white text-xl font-bold mt-2">Producción Comercial Galardonada</h3>
+              {/* <span className="px-3 py-1 bg-blue-600 text-white text-sm rounded-full">Proyecto destacado</span> */}
+              <h3 className="text-white text-xl font-bold mt-2">Creatividad Professional</h3>
             </div>
           </motion.div>
         </div>
