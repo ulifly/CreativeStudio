@@ -8,7 +8,7 @@ import Home from './pages/Home'
 import NotFound from './pages/Not-found'
 import AboutEs from './pages/AboutEs';
 import ContactEs from './pages/ContactEs';
-
+import ConnectEs from './pages/ConnectEs';
 
 import './App.css'
 
@@ -18,14 +18,13 @@ function Router() {
       <Route path="/" component={Home} />
       <Route path="/aboutEs" component={AboutEs} />
       <Route path="/contactEs" component={ContactEs} />
-      
+      <Route path="/connectEs" component={ConnectEs} />
       {/* Fallback to 404 */}
       <Route component={NotFound} />
 
     </Switch>
   );
 }
-
 
 function App() {
   return (

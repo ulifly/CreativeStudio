@@ -187,7 +187,7 @@ export default function ContactSection() {
                   
                   <Button 
                     type="submit" 
-                    className="bg-blue-600 hover:bg-blue-500"
+                    className="bg-blue-600 hover:bg-blue-500 text-white"
                     disabled={contactMutation.isPending}
                   >
                     {contactMutation.isPending ? (
@@ -249,44 +249,6 @@ export default function ContactSection() {
               </div>
             </div>
             
-            <div className="bg-white p-6 rounded-xl shadow-lg">
-              <h3 className="text-xl font-bold font-montserrat mb-4">Connect With Us</h3>
-              <div className="flex flex-wrap gap-4">
-                <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center text-blue-600 hover:bg-blue-600 hover:text-white transition-colors">
-                  <Facebook size={20} />
-                </a>
-                <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center text-blue-600 hover:bg-blue-600 hover:text-white transition-colors">
-                  <Instagram size={20} />
-                </a>
-                <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center text-blue-600 hover:bg-blue-600 hover:text-white transition-colors">
-                  <Twitter size={20} />
-                </a>
-                <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center text-blue-600 hover:bg-blue-600 hover:text-white transition-colors">
-                  <Linkedin size={20} />
-                </a>
-                <a href="https://wa.me/12345678900" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center text-blue-600 hover:bg-blue-600 hover:text-white transition-colors">
-                  <FaWhatsapp size={20} />
-                </a>
-              </div>
-            </div>
-            
-            <div className="bg-white p-6 rounded-xl shadow-lg">
-              <h3 className="text-xl font-bold font-montserrat mb-4">Business Hours</h3>
-              <div className="space-y-2">
-                <div className="flex justify-between">
-                  <span className="text-slate-600">Monday - Friday</span>
-                  <span className="font-medium">9:00 AM - 6:00 PM</span>
-                </div>
-                <div className="flex justify-between">
-                  <span className="text-slate-600">Saturday</span>
-                  <span className="font-medium">10:00 AM - 4:00 PM</span>
-                </div>
-                <div className="flex justify-between">
-                  <span className="text-slate-600">Sunday</span>
-                  <span className="font-medium">Closed</span>
-                </div>
-              </div>
-            </div>
           </motion.div>
         </div>
       </div>

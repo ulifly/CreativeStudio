@@ -28,7 +28,6 @@ export default function Navbar() {
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
             <Link href="/#services" className="font-medium hover:text-blue-600 transition-colors">Servicios</Link>
-            {/* <a href="#portfolio" className="font-medium hover:text-blue-600 transition-colors">Portfolio</a> */}
             <Link href="/AboutEs" className="font-medium hover:text-blue-600 transition-colors">Acerca</Link>
             <Link href="/ContactEs" className="font-medium hover:text-blue-600 transition-colors">Contacto</Link>
             <Link href="/ConnectEs" className="font-medium hover:text-blue-600 transition-colors">Conecta con nosotros</Link>
@@ -45,6 +44,7 @@ export default function Navbar() {
         </div>
         
         {/* Mobile Navigation Menu */}
+
         {isOpen && (
           <div className="md:hidden mt-4 bg-white rounded-lg shadow-lg absolute left-4 right-4">
             <div className="flex flex-col space-y-3 py-4 px-4">
@@ -55,13 +55,6 @@ export default function Navbar() {
               >
                 Servicios
               </Link>
-              {/* <a 
-                href="#portfolio" 
-                className="font-medium hover:text-blue-600 transition-colors py-2"
-                onClick={closeMenu}
-              >
-                Portfolio
-              </a> */}
               <Link 
                 href="/AboutEs" 
                 className="font-medium hover:text-blue-600 transition-colors py-2"
@@ -70,14 +63,14 @@ export default function Navbar() {
                 Acerca de
               </Link>
               <Link 
-                href="/contact" 
+                href="/contactEs" 
                 className="font-medium hover:text-blue-600 transition-colors py-2"
                 onClick={closeMenu}
               >
                 Contacto
               </Link>
               <Link 
-                href="#connect" 
+                href="/connectEs" 
                 className="font-medium hover:text-blue-600 transition-colors py-2"
                 onClick={closeMenu}
               >

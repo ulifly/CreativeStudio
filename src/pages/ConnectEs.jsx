@@ -1,8 +1,8 @@
 import NavbarES from "../components/NavbarEs.jsx";
-import ContactSectionEs from "../components/ContactSectionEs.jsx";
 import Footer from "../components/Footer.jsx";
+import ConnectSection from "../components/ConnectSection.jsx";
 
-export default function ContactEs() {
+export default function ConnectEs() {
 
 
   return (
@@ -12,9 +12,9 @@ export default function ContactEs() {
       
       <main>
           <>
-            <ContactSectionEs title="contacto " />
+            <ConnectSection title="Conéctate" />
           </>
-       
+
       </main>
       <Footer />
     </div>
