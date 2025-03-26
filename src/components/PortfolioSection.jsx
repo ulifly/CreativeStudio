@@ -117,10 +117,11 @@ export default function PortfolioSection() {
           <Button 
             variant="default" 
             size="lg"
-            className="bg-slate-800 hover:bg-slate-700"
+            className="bg-slate-800 hover:bg-slate-700 text-white px-8 py-3 rounded-md"
           >
             View All Projects
           </Button>
+
         </div>
       </div>
       

@@ -4,7 +4,7 @@ import { CheckCircle } from "lucide-react";
 
 export default function HeroSection() {
   return (
-    <section id="hero" className="pt-24 pb-16 md:pt-32 md:pb-24 bg-gradient-to-br from-slate-800 to-slate-900 text-white relative overflow-hidden">
+    <section id="hero" className="pt-36 pb-16 md:pt-32 md:pb-24 bg-gradient-to-br from-slate-800 to-slate-900 text-white relative overflow-hidden">
       <div className="absolute inset-0 z-0 opacity-20">
         <div className="absolute top-0 left-0 w-64 h-64 rounded-full bg-blue-600 blur-3xl transform -translate-x-1/2 -translate-y-1/2"></div>
         <div className="absolute bottom-0 right-0 w-96 h-96 rounded-full bg-blue-400 blur-3xl transform translate-x-1/2 translate-y-1/2"></div>
