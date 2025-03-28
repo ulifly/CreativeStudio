@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 
 import NavbarES from "../components/NavbarEs.jsx";
 import HeroSectionES from "../components/HeroSectionEs.jsx";
-
+import PricingSectionEs from "../components/PricingSectionEs.jsx";
 
 import Navbar from "../components/Navbar.jsx";
 import HeroSection from "../components/HeroSection.jsx";
@@ -10,8 +10,10 @@ import HeroSection from "../components/HeroSection.jsx";
 import ServicesSection from "../components/ServicesSection.jsx";
 import ServicesSectionEs from "../components/ServicesSectionEs.jsx";
 
+
 import Footer from "../components/Footer.jsx";
 import FooterEs from "../components/FooterEs.jsx";
+import PricingSection from "../components/PricingSection.jsx";
 
 export default function Home() {
 
@@ -38,11 +40,13 @@ export default function Home() {
           <>
             <HeroSectionES />
             <ServicesSectionEs title="Servicios" />
+            <PricingSectionEs title="Precios" />
           </>
         ) : (
           <>
             <HeroSection title="Welcome" />
             <ServicesSection title="Services" />
+            <PricingSection title="Prices" />
           </>
 
         )}

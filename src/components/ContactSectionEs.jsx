@@ -159,7 +159,7 @@ export default function ContactSection() {
                               <SelectValue placeholder="Select a subject" />
                             </SelectTrigger>
                           </FormControl>
-                          <SelectContent>
+                          <SelectContent className="bg-gray-800 text-white">
                             <SelectItem value="general">General Inquiry</SelectItem>
                             <SelectItem value="services">Services Information</SelectItem>
                             <SelectItem value="waitlist">Waitlist Question</SelectItem>
