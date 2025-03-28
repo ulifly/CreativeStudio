@@ -1,7 +1,22 @@
+import { useEffect } from "react";
+
 export default function PricingSectionEs() {
+  useEffect(() => {
+    // Cargar el script de Stripe
+    const script = document.createElement("script");
+    script.src = "https://js.stripe.com/v3/buy-button.js";
+    script.async = true;
+    document.body.appendChild(script);
+
+    return () => {
+      document.body.removeChild(script);
+    };
+  }, []);
+
   return (
     <section id="pricing" className="py-16 md:py-1 bg-slate-950 text-white">
       <div className="flex lg:flex-row flex-col lg:justify-center items-center lg:p-8 p-4 font-sans text-white bg-gray-900 ">
+        {/* Plan START */}
         <div className="lg:w-[23rem] w-full border-2 lg:border-r-0 border-gray-800 p-5">
           <div className="pb-3 mb-4 border-b border-gray-800">
             <div className="text-xs text-gray-400 mb-2">START</div>
@@ -10,52 +25,22 @@ export default function PricingSectionEs() {
               <span className="text-bluegray-300 ml-1">/Dlls</span>
             </div>
           </div>
-          <div className="flex items-center mb-2">
-            <svg
-              width="24"
-              height="24"
-              fill="none"
-              className="text-green-500 mr-1"
-              viewBox="0 0 24 24"
-            >
-              <path
-                stroke="currentColor"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="1.5"
-                d="M5.75 12.8665L8.33995 16.4138C9.15171 17.5256 10.8179 17.504 11.6006 16.3715L18.25 6.75"
-              ></path>
-            </svg>
-            Vexillologist pitchfork
-          </div>
           <div className="mt-auto w-full">
-            <button className="bg-gray-800 cursor-pointer text-white py-2 border-none w-full flex items-center px-3">
-              Button
-              <svg
-                className="ml-auto"
-                width="24"
-                height="24"
-                fill="none"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  stroke="currentColor"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="1.5"
-                  d="M13.75 6.75L19.25 12L13.75 17.25"
-                ></path>
-                <path
-                  stroke="currentColor"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="1.5"
-                  d="M19 12H4.75"
-                ></path>
-              </svg>
-            </button>
+            {/* Botón de Stripe */}
+            <div
+              dangerouslySetInnerHTML={{
+                __html: `
+                  <stripe-buy-button
+                    buy-button-id="buy_btn_1R7i0I2UJKuBEKUSjmYwwh9o"
+                    publishable-key="pk_test_51R7hFh2UJKuBEKUSXVN8qg7n1qVzO537DxKKYQJ0JIsia68N78JhhFLk4HSrgB4TGlxFe2MWomEfyZJGU9zb4qUk00AzEBzPie"
+                  ></stripe-buy-button>
+                `,
+              }}
+            />
           </div>
         </div>
+
+        {/* Plan PRO */}
         <div className="lg:w-[23rem] w-full lg:my-0 my-4 border-2 border-gray-800 p-5 lg:shadow-8">
           <div className="pb-3 mb-4 border-b border-gray-800">
             <div className="text-xs text-gray-400 mb-2">PRO</div>
@@ -64,127 +49,22 @@ export default function PricingSectionEs() {
               <span className="text-bluegray-300 ml-1">/Dlls</span>
             </div>
           </div>
-          <div className="flex items-center mb-2">
-            <svg
-              width="24"
-              height="24"
-              fill="none"
-              className="text-green-500 mr-1"
-              viewBox="0 0 24 24"
-            >
-              <path
-                stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="1.5"
-                d="M5.75 12.8665L8.33995 16.4138C9.15171 17.5256 10.8179 17.504 11.6006 16.3715L18.25 6.75"
-              ></path>
-            </svg>
-            Vexillologist pitchfork
-          </div>
-          <div className="flex items-center mb-2">
-            <svg
-              width="24"
-              height="24"
-              fill="none"
-              className="text-green-500 mr-1"
-              viewBox="0 0 24 24"
-            >
-              <path
-                stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="1.5"
-                d="M5.75 12.8665L8.33995 16.4138C9.15171 17.5256 10.8179 17.504 11.6006 16.3715L18.25 6.75"
-              ></path>
-            </svg>
-            Tumeric plaid portland
-          </div>
-          <div className="flex items-center mb-2">
-            <svg
-              width="24"
-              height="24"
-              fill="none"
-              className="text-green-500 mr-1"
-              viewBox="0 0 24 24"
-            >
-              <path
-                stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="1.5"
-                d="M5.75 12.8665L8.33995 16.4138C9.15171 17.5256 10.8179 17.504 11.6006 16.3715L18.25 6.75"
-              ></path>
-            </svg>
-            Hexagon neutra unicorn
-          </div>
-          <div className="flex items-center mb-2">
-            <svg
-              width="24"
-              height="24"
-              fill="none"
-              className="text-green-500 mr-1"
-              viewBox="0 0 24 24"
-            >
-              <path
-                stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="1.5"
-                d="M5.75 12.8665L8.33995 16.4138C9.15171 17.5256 10.8179 17.504 11.6006 16.3715L18.25 6.75"
-              ></path>
-            </svg>
-            Tumeric plaid portland
-          </div>
-          <div className="flex items-center mb-5">
-            <svg
-              width="24"
-              height="24"
-              fill="none"
-              className="text-green-500 mr-1"
-              viewBox="0 0 24 24"
-            >
-              <path
-                stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="1.5"
-                d="M5.75 12.8665L8.33995 16.4138C9.15171 17.5256 10.8179 17.504 11.6006 16.3715L18.25 6.75"
-              ></path>
-            </svg>
-            Mixtape chillwave tumeric
-          </div>
           <div className="mt-auto w-full">
-            <button className="bg-teal-500 cursor-pointer text-white py-2 border-none w-full flex items-center px-3">
-              Button
-              <svg
-                className="ml-auto"
-                width="24"
-                height="24"
-                fill="none"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="1.5"
-                  d="M13.75 6.75L19.25 12L13.75 17.25"
-                ></path>
-                <path
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="1.5"
-                  d="M19 12H4.75"
-                ></path>
-              </svg>
-            </button>
-            <div className="text-xs mt-3 text-bluegray-600 leading-7">
-              Literally you probably haven't heard of them jean shorts.
-            </div>
+            {/* Botón de Stripe */}
+            <div
+              dangerouslySetInnerHTML={{
+                __html: `
+                  <stripe-buy-button
+                    buy-button-id="buy_btn_1R7i0I2UJKuBEKUSjmYwwh9o"
+                    publishable-key="pk_test_51R7hFh2UJKuBEKUSXVN8qg7n1qVzO537DxKKYQJ0JIsia68N78JhhFLk4HSrgB4TGlxFe2MWomEfyZJGU9zb4qUk00AzEBzPie"
+                  ></stripe-buy-button>
+                `,
+              }}
+            />
           </div>
         </div>
+
+        {/* Plan ENTERPRISE */}
         <div className="lg:w-[23rem] w-full border-2 lg:border-left-none border-gray-800 p-5">
           <div className="pb-3 mb-4 border-b border-gray-800">
             <div className="text-xs text-gray-400 mb-2">ENTERPRISE</div>
@@ -193,89 +73,18 @@ export default function PricingSectionEs() {
               <span className="text-bluegray-300 ml-1">/Dlls</span>
             </div>
           </div>
-          <div className="flex items-center mb-2">
-            <svg
-              width="24"
-              height="24"
-              fill="none"
-              className="text-green-500 mr-1"
-              viewBox="0 0 24 24"
-            >
-              <path
-                stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="1.5"
-                d="M5.75 12.8665L8.33995 16.4138C9.15171 17.5256 10.8179 17.504 11.6006 16.3715L18.25 6.75"
-              ></path>
-            </svg>
-            Vexillologist pitchfork
-          </div>
-          <div className="flex items-center mb-2">
-            <svg
-              width="24"
-              height="24"
-              fill="none"
-              className="text-green-500 mr-1"
-              viewBox="0 0 24 24"
-            >
-              <path
-                stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="1.5"
-                d="M5.75 12.8665L8.33995 16.4138C9.15171 17.5256 10.8179 17.504 11.6006 16.3715L18.25 6.75"
-              ></path>
-            </svg>
-            Tumeric plaid portland
-          </div>
-          <div className="flex items-center mb-5">
-            <svg
-              width="24"
-              height="24"
-              fill="none"
-              className="text-green-500 mr-1"
-              viewBox="0 0 24 24"
-            >
-              <path
-                stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="1.5"
-                d="M5.75 12.8665L8.33995 16.4138C9.15171 17.5256 10.8179 17.504 11.6006 16.3715L18.25 6.75"
-              ></path>
-            </svg>
-            Mixtape chillwave tumeric
-          </div>
           <div className="mt-auto w-full">
-            <button className="bg-bluegray-800 cursor-pointer text-white py-2 border-none w-full flex items-center px-3">
-              Button
-              <svg
-                className="ml-auto"
-                width="24"
-                height="24"
-                fill="none"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="1.5"
-                  d="M13.75 6.75L19.25 12L13.75 17.25"
-                ></path>
-                <path
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="1.5"
-                  d="M19 12H4.75"
-                ></path>
-              </svg>
-            </button>
-            <div className="text-xs mt-3 text-bluegray-600 leading-7">
-              Literally you probably haven't heard of them jean shorts.
-            </div>
+            {/* Botón de Stripe */}
+            <div
+              dangerouslySetInnerHTML={{
+                __html: `
+                  <stripe-buy-button
+                    buy-button-id="buy_btn_1R7i0I2UJKuBEKUSjmYwwh9o"
+                    publishable-key="pk_test_51R7hFh2UJKuBEKUSXVN8qg7n1qVzO537DxKKYQJ0JIsia68N78JhhFLk4HSrgB4TGlxFe2MWomEfyZJGU9zb4qUk00AzEBzPie"
+                  ></stripe-buy-button>
+                `,
+              }}
+            />
           </div>
         </div>
       </div>
