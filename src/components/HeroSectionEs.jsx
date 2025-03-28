@@ -29,7 +29,7 @@ export default function HeroSection() {
             <div className="flex flex-wrap gap-4 mt-8">
               <a 
                 href="#connect" 
-                className="bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 px-6 rounded-md transition-colors"
+                className="bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 px-6 rounded-full transition-colors"
               >
                 Conecta con nosotros
               </a>

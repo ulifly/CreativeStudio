@@ -1,8 +1,6 @@
 import NavbarES from "../components/NavbarEs.jsx";
-import AboutSection from "../components/AboutSection.jsx";
-import Footer from "../components/Footer.jsx";
-
-import CTASection from "../components/CTASection.jsx";
+import AboutSectionEs from "../components/AboutSectionEs.jsx";
+import FooterEs from "../components/FooterEs.jsx";
 
 export default function AboutEs() {
 
@@ -14,14 +12,14 @@ export default function AboutEs() {
       
       <main>
           <>
-            <AboutSection title="Acerca de" />
+            <AboutSectionEs title="Acerca de" />
             {/* <ConnectSection title="Conéctate" /> */}
             {/* <CTASection title="Llamada a la acción" /> */}
             {/* <ContactSection title="Contacto" /> */}
           </>
        
       </main>
-      <Footer />
+      <FooterEs />
     </div>
   );
 }
