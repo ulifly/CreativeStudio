@@ -1,6 +1,7 @@
 import NavbarES from "../components/NavbarEs.jsx";
-import Footer from "../components/Footer.jsx";
-import ConnectSection from "../components/ConnectSection.jsx";
+import FooterEs from "../components/FooterEs.jsx";
+import ConnectSectionEs from "../components/ConnectSectionEs.jsx";
+import PricingSectionEs from "../components/PricingSectionEs.jsx";
 
 export default function ConnectEs() {
 
@@ -12,11 +13,12 @@ export default function ConnectEs() {
       
       <main>
           <>
-            <ConnectSection title="Conéctate" />
+            <ConnectSectionEs title="Conéctate" />
+            <PricingSectionEs title="Precios" />
           </>
 
       </main>
-      <Footer />
+      <FooterEs />
     </div>
   );
 }

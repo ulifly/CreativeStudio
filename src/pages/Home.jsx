@@ -11,6 +11,7 @@ import ServicesSection from "../components/ServicesSection.jsx";
 import ServicesSectionEs from "../components/ServicesSectionEs.jsx";
 
 import Footer from "../components/Footer.jsx";
+import FooterEs from "../components/FooterEs.jsx";
 
 export default function Home() {
 
@@ -46,7 +47,16 @@ export default function Home() {
 
         )}
       </main>
-      <Footer />
+        {language === 'es' ? (
+          <>
+            <FooterEs />
+          </>
+        ) : (
+          <>
+            <Footer />
+          </>
+        )}
+    
     </div>
   );
 }

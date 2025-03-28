@@ -18,7 +18,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 mb-12">
           <div>
             <Link href="/" className="text-2xl font-bold font-montserrat flex items-center mb-4">
-              <span className="text-blue-500">Creative</span>Studio
+              <span className="text-blue-500">A1</span>Studio
             </Link>
             <p className="text-gray-300 mb-6">
               Premium creative services for brands that want to make an impact. Our innovative platform is launching soon.

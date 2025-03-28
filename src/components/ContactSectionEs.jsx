@@ -78,7 +78,7 @@ export default function ContactSection() {
   }
 
   return (
-    <section id="contact" className="py-16 md:py-24 bg-gray-100">
+    <section id="contact" className="py-16 md:py-24 bg-black text-white">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div 
           className="text-center max-w-3xl mx-auto mb-16"
@@ -89,7 +89,7 @@ export default function ContactSection() {
         >
           <span className="text-blue-600 font-medium">Get In Touch</span>
           <h2 className="text-3xl md:text-4xl font-bold font-montserrat mt-2">Contact Us</h2>
-          <p className="text-slate-600 mt-4">Have questions about our services or upcoming platform? We're here to help.</p>
+          <p className="text-white mt-4">Have questions about our services or upcoming platform? We're here to help.</p>
         </motion.div>
         
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
@@ -187,7 +187,7 @@ export default function ContactSection() {
                   
                   <Button 
                     type="submit" 
-                    className="bg-blue-600 hover:bg-blue-500 text-white"
+                    className="bg-blue-600 hover:bg-blue-500 text-white rounded-full"
                     disabled={contactMutation.isPending}
                   >
                     {contactMutation.isPending ? (
@@ -211,26 +211,26 @@ export default function ContactSection() {
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            <div className="bg-white p-6 rounded-xl shadow-lg">
+            <div className="bg-slate-900 p-6 rounded-xl shadow-lg  ">
               <h3 className="text-xl font-bold font-montserrat mb-4">Contact Information</h3>
               <div className="space-y-4">
                 <div className="flex items-start gap-4">
-                  <div className="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                  {/* <div className="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
                     <Mail className="text-blue-600" size={20} />
-                  </div>
-                  <div>
+                  </div> */}
+                  {/* <div>
                     <div className="text-sm font-medium text-slate-600">Email Us</div>
                     <a href="mailto:info@creativestudio.com" className="text-slate-800 hover:text-blue-600">info@creativestudio.com</a>
-                  </div>
+                  </div> */}
                 </div>
                 
-                <div className="flex items-start gap-4">
+                <div className="flex items-start gap-4 ">
                   <div className="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
                     <Phone className="text-blue-600" size={20} />
                   </div>
                   <div>
-                    <div className="text-sm font-medium text-slate-600">Call Us</div>
-                    <a href="tel:+12345678900" className="text-slate-800 hover:text-blue-600">+1 (234) 567-8900</a>
+                    <div className="text-sm font-medium text-white">Call Us</div>
+                    <a href="tel:+12345678900" className="text-slate-400 hover:text-blue-600">+1 (234) 567-8900</a>
                   </div>
                 </div>
                 
@@ -239,8 +239,8 @@ export default function ContactSection() {
                     <MapPin className="text-blue-600" size={20} />
                   </div>
                   <div>
-                    <div className="text-sm font-medium text-slate-600">Visit Us</div>
-                    <address className="text-slate-800 not-italic">
+                    <div className="text-sm font-medium text-white">Visit Us</div>
+                    <address className="text-slate-400 not-italic">
                       123 Creative Avenue<br />
                       Design District, NY 10001
                     </address>

@@ -1,6 +1,6 @@
 import NavbarES from "../components/NavbarEs.jsx";
 import ContactSectionEs from "../components/ContactSectionEs.jsx";
-import Footer from "../components/Footer.jsx";
+import FooterEs from "../components/FooterEs.jsx";
 
 export default function ContactEs() {
 
@@ -16,7 +16,7 @@ export default function ContactEs() {
           </>
        
       </main>
-      <Footer />
+      <FooterEs />
     </div>
   );
 }
