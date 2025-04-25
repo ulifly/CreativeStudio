@@ -21,7 +21,7 @@ export default function PricingSectionEs() {
           <div className="pb-3 mb-4 border-b border-gray-800">
             <div className="text-xs text-gray-400 mb-2">START</div>
             <div className="flex items-center">
-              <h2 className="text-5xl m-0 font-normal">$10</h2>
+              <h2 className="text-5xl m-0 font-normal">$100</h2>
               <span className="text-bluegray-300 ml-1">/Dlls</span>
             </div>
           </div>
@@ -45,7 +45,7 @@ export default function PricingSectionEs() {
           <div className="pb-3 mb-4 border-b border-gray-800">
             <div className="text-xs text-gray-400 mb-2">PRO</div>
             <div className="flex items-center">
-              <h2 className="text-5xl m-0 font-normal">$20</h2>
+              <h2 className="text-5xl m-0 font-normal">$2000</h2>
               <span className="text-bluegray-300 ml-1">/Dlls</span>
             </div>
           </div>
@@ -69,7 +69,7 @@ export default function PricingSectionEs() {
           <div className="pb-3 mb-4 border-b border-gray-800">
             <div className="text-xs text-gray-400 mb-2">ENTERPRISE</div>
             <div className="flex items-center">
-              <h2 className="text-5xl m-0 font-normal">$80</h2>
+              <h2 className="text-5xl m-0 font-normal">$5000</h2>
               <span className="text-bluegray-300 ml-1">/Dlls</span>
             </div>
           </div>

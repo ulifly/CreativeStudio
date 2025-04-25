@@ -58,7 +58,7 @@ export default function HeroSection() {
           </motion.div>
 
           <motion.div
-            className="relative h-96 md:h-[500px] rounded-xl overflow-hidden shadow-2xl"
+            className="relative w-200 h-96 md:h-[500px] rounded-xl overflow-hidden shadow-2xl"
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.6, delay: 0.2 }}

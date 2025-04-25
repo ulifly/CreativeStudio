@@ -29,7 +29,7 @@ const services = [
   },
   {
     icon: <Megaphone className="text-2xl text-blue-600 group-hover:text-white" />,
-    title: "Marketing Strategy",
+    title: "Business Marketing",
     description: "Data-driven marketing approaches to reach your target audience and achieve measurable results."
   },
   // {
