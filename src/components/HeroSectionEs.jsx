@@ -2,6 +2,15 @@
 import { motion } from "framer-motion";
 import { CheckCircle } from "lucide-react";
 
+import { 
+  Form, 
+  FormControl, 
+  FormField, 
+  FormItem, 
+  FormLabel, 
+  FormMessage 
+} from "../components/ui/Form";
+
 export default function HeroSection() {
   return (
     <section id="hero" className="pt-36 pb-16 md:pt-32 md:pb-24 bg-gradient-to-br from-slate-800 to-slate-900 text-white relative overflow-hidden">
@@ -55,6 +64,7 @@ export default function HeroSection() {
                 <span>Soporte Dedicado</span>
               </div>
             </div> */}
+            
           </motion.div>
 
           <motion.div
@@ -63,6 +73,7 @@ export default function HeroSection() {
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
+            
             <img
               src="../../public/logo.jpeg"
               alt="Professional video production team"

@@ -30,7 +30,7 @@ export default function Navbar() {
             <Link href="/#services" className="font-medium hover:text-blue-600 transition-colors">Servicios</Link>
             <Link href="/AboutEs" className="font-medium hover:text-blue-600 transition-colors">Acerca</Link>
             <Link href="/ContactEs" className="font-medium hover:text-blue-600 transition-colors">Contacto</Link>
-            <Link href="/ConnectEs" className="font-medium hover:text-blue-600 transition-colors">Conecta con nosotros</Link>
+            {/* <Link href="/ConnectEs" className="font-medium hover:text-blue-600 transition-colors">Conecta con nosotros</Link> */}
           </div>
           
           {/* Mobile Menu Button */}
