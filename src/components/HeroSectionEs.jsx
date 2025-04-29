@@ -153,8 +153,8 @@ export default function HeroSection() {
             transition={{ duration: 0.6, delay: 0.2 }}
           >
             <img
-              src="../../public/logo.jpeg"
-              alt="Professional video production team"
+              src="/logo.jpeg"
+              alt="Equipo professional de video produccion"
               className="w-full h-full object-cover"
             />
           </motion.div>
