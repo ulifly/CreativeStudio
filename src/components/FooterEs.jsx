@@ -6,7 +6,8 @@ import {
   Linkedin,
   Mail,
   Phone,
-  MapPin
+  MapPin,
+  Youtube
 } from "lucide-react";
 
 export default function Footer() {
@@ -53,7 +54,7 @@ export default function Footer() {
           <div>
             <h3 className="text-lg font-bold mb-4">Links</h3>
             <div className="flex gap-4">
-              <a
+              {/* <a
                 href="https://www.facebook.com"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -61,9 +62,35 @@ export default function Footer() {
                 aria-label="Facebook"
               >
                 <Facebook size={42} />
-              </a>
+              </a> */}
+
               <a
-                href="https://www.instagram.com"
+                href="mailto:netww@proton.me"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-300 hover:text-blue-500 transition-colors"
+                aria-label="Instagram"
+              >
+                <Mail size={42} />
+              </a>
+
+              
+
+
+              <a
+                href="https://www.youtube.com/@r1Qtxm"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-300 hover:text-blue-500 transition-colors"
+                aria-label="Instagram"
+              >
+                <Youtube size={42} />
+              </a>
+
+        
+
+              <a
+                href="https://www.instagram.com/rqprodtn/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-300 hover:text-blue-500 transition-colors"
@@ -71,7 +98,7 @@ export default function Footer() {
               >
                 <Instagram size={42} />
               </a>
-              <a
+              {/* <a
                 href="https://www.twitter.com"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -79,8 +106,8 @@ export default function Footer() {
                 aria-label="Twitter"
               >
                 <Twitter size={42} />
-              </a>
-              <a
+              </a> */}
+              {/* <a
                 href="https://www.linkedin.com"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -88,6 +115,19 @@ export default function Footer() {
                 aria-label="LinkedIn"
               >
                 <Linkedin size={42} />
+              </a> */}
+              <a
+                href="https://linktr.ee/A1gn"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-300 hover:text-green-500 transition-colors"
+                aria-label="Linktree"
+              >
+                <svg width="42" height="42" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"
+                  strokeLinecap="round" strokeLinejoin="round">
+                  <circle cx="12" cy="12" r="10" />
+                  <path d="M8 13h8M8 17h8M12 7v10" />
+                </svg>
               </a>
             </div>
           </div>
@@ -96,10 +136,10 @@ export default function Footer() {
         <div className="border-t border-slate-700 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="text-gray-400 text-sm mb-4 md:mb-0">
-              &copy; {currentYear} CreativeStudio. All rights reserved.
+              &copy; {currentYear} A1 Studio. All rights reserved.
             </div>
             <div className="flex gap-6">
-              <a href="#" className="text-gray-400 hover:text-white text-sm transition-colors">Privacy Policy</a>
+              {/* <a href="#" className="text-gray-400 hover:text-white text-sm transition-colors">Privacy Policy</a> */}
               <a href="#" className="text-gray-400 hover:text-white text-sm transition-colors">Terms of Service</a>
               <a href="#" className="text-gray-400 hover:text-white text-sm transition-colors">Cookie Policy</a>
             </div>
