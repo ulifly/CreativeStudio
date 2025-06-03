@@ -81,10 +81,10 @@ export default function Footer() {
                 href="https://www.youtube.com/@r1Qtxm"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-300 hover:text-blue-500 transition-colors"
+                className="text-gray-300 hover:text-red-500 transition-colors"
                 aria-label="Instagram"
               >
-                <Youtube size={42} />
+                <Youtube size={48} />
               </a>
 
         
@@ -93,10 +93,10 @@ export default function Footer() {
                 href="https://www.instagram.com/rqprodtn/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-300 hover:text-blue-500 transition-colors"
+                className="text-gray-300 hover:text-orange-400 transition-colors"
                 aria-label="Instagram"
               >
-                <Instagram size={42} />
+                <Instagram size={40} />
               </a>
               {/* <a
                 href="https://www.twitter.com"
