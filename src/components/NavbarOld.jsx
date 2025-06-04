@@ -21,16 +21,17 @@ export default function Navbar() {
         <div className="flex justify-between items-center">
           <div className="flex items-center">
             <Link href="/" className="text-2xl font-bold font-montserrat text-primary flex items-center">
-              <span className="text-blue-600">A1</span>Studio
+              <span className="text-blue-600">Creative</span>Studio
             </Link>
           </div>
           
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
-            <Link href="/#services" className="font-medium hover:text-blue-600 transition-colors">Servicios</Link>
-            <Link href="/AboutEs" className="font-medium hover:text-blue-600 transition-colors">Acerca</Link>
-            {/* <Link href="/ContactEs" className="font-medium hover:text-blue-600 transition-colors">Contacto</Link> */}
-            {/* <Link href="/ConnectEs" className="font-medium hover:text-blue-600 transition-colors">Conecta con nosotros</Link> */}
+            <a href="#services" className="font-medium hover:text-blue-600 transition-colors">Services</a>
+            <a href="#portfolio" className="font-medium hover:text-blue-600 transition-colors">Portfolio</a>
+            <a href="#about" className="font-medium hover:text-blue-600 transition-colors">About</a>
+            <a href="#contact" className="font-medium hover:text-blue-600 transition-colors">Contact</a>
+            <a href="#connect" className="font-medium hover:text-blue-600 transition-colors">Connect with Us</a>
           </div>
           
           {/* Mobile Menu Button */}
@@ -44,38 +45,44 @@ export default function Navbar() {
         </div>
         
         {/* Mobile Navigation Menu */}
-
         {isOpen && (
           <div className="md:hidden mt-4 bg-white rounded-lg shadow-lg absolute left-4 right-4">
             <div className="flex flex-col space-y-3 py-4 px-4">
-              <Link 
-                href="/#services" 
+              <a 
+                href="#services" 
                 className="font-medium hover:text-blue-600 transition-colors py-2"
                 onClick={closeMenu}
               >
-                Servicios
-              </Link>
-              <Link 
-                href="/AboutEs" 
+                Services
+              </a>
+              <a 
+                href="#portfolio" 
                 className="font-medium hover:text-blue-600 transition-colors py-2"
                 onClick={closeMenu}
               >
-                Acerca de
-              </Link>
-              {/* <Link 
-                href="/contactEs" 
+                Portfolio
+              </a>
+              <a 
+                href="#about" 
                 className="font-medium hover:text-blue-600 transition-colors py-2"
                 onClick={closeMenu}
               >
-                Contacto
-              </Link> */}
-              {/* <Link 
-                href="/connectEs" 
+                About
+              </a>
+              <a 
+                href="#contact" 
                 className="font-medium hover:text-blue-600 transition-colors py-2"
                 onClick={closeMenu}
               >
-                Conecta con nosotros
-              </Link> */}
+                Contact
+              </a>
+              <a 
+                href="#connect" 
+                className="font-medium hover:text-blue-600 transition-colors py-2"
+                onClick={closeMenu}
+              >
+                Connect with Us
+              </a>
             </div>
           </div>
         )}
