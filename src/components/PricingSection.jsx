@@ -15,26 +15,21 @@ export default function PricingSectionEs() {
 
   return (
     <section id="pricing" className="py-16 md:py-1 bg-slate-950 text-white">
-      <div className="flex lg:flex-row flex-col lg:justify-center items-center lg:p-8 p-4 font-sans text-white bg-gray-900 ">
-        {/* Plan START */}
-        <div className="lg:w-[23rem] w-full border-2 lg:border-r-0 border-gray-800 p-5">
-          <div className="pb-3 mb-4 border-b border-gray-800">
-            <div className="text-xs text-gray-400 mb-2">START</div>
-            <div className="flex items-center">
-              <h2 className="text-5xl m-0 font-normal">$120</h2>
-              <span className="text-bluegray-300 ml-1">/USD</span>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:p-12 p-4 font-sans text-white bg-gray-900 justify-center">
+        {/* Plan 1 */}
+        <div className="lg:w-[28rem] w-full border-2 border-gray-800 p-8 mx-auto">
+          <div className="pb-6 mb-4 border-b border-gray-800">
+            <div className="text-xs text-gray-400 mb-2"></div>
+            <div className="items-center">
+              <h2 className="text-2xl m-0 font-normal">Consult/</h2>
+              <h2 className="text-2xl m-0 font-normal">Draft</h2>
+              <span className="text-bluegray-300 ml-1"></span>
             </div>
-              <div>
+              {/* <div>
                 <ul>
-                <br />
-                <li>Consultation + Additonal</li>
-                <li>Desing sketch (additional)</li>
-                <li>Branding image.(additional)</li>
-                <li>Video structure (additional)</li>
-                <br />
-                <br />
+                <li></li>
                 </ul>
-              </div>
+              </div> */}
           </div>
           <div className="mt-auto w-full">
             {/* Botón de Stripe */}
@@ -42,8 +37,8 @@ export default function PricingSectionEs() {
               dangerouslySetInnerHTML={{
                 __html: `
                   <stripe-buy-button
-                    buy-button-id="buy_btn_1R7i0I2UJKuBEKUSjmYwwh9o"
-                    publishable-key="pk_test_51R7hFh2UJKuBEKUSXVN8qg7n1qVzO537DxKKYQJ0JIsia68N78JhhFLk4HSrgB4TGlxFe2MWomEfyZJGU9zb4qUk00AzEBzPie"
+                    buy-button-id="buy_btn_1RUByqLpyguTlw9JAtL0FD9n"
+                    publishable-key="pk_live_51R7q8qLpyguTlw9JUsunYgWZ7FVGe7dVcml7kuVNdi86zUonHoCee5C7gL5irZdPPpF913Asb9Jv5kqXyTiR9Z1000nIVbq7xY"
                   ></stripe-buy-button>
                 `,
               }}
@@ -51,25 +46,22 @@ export default function PricingSectionEs() {
           </div>
         </div>
 
-        {/* Plan PRO */}
-        <div className="lg:w-[23rem] w-full lg:my-0 my-4 border-2 border-gray-800 p-5 lg:shadow-8">
+        {/* Plan 2 */}
+        <div className="lg:w-[28rem] w-full border-2 border-gray-800 p-8 mx-auto">
           <div className="pb-3 mb-4 border-b border-gray-800">
-            <div className="text-xs text-gray-400 mb-2">PRO</div>
-            <div className="flex items-center">
-              <h2 className="text-5xl m-0 font-normal">$998</h2>
-              <span className="text-bluegray-300 ml-1">/USD</span>
+            <div className="text-xs text-gray-400 mb-2"></div>
+            <div className="items-center">
+              <h2 className="text-2xl m-0 font-normal">Production </h2>
+              <h2 className="text-2xl m-0 font-normal">(film)</h2>
+              <span className="text-bluegray-300 ml-1"></span>
             </div>
-              <div>
+              {/* <div>
                 <ul>
                 <br />
                 <li>Basic business start up and Branding image</li>
                 <br />
-                <br />
-                <br />
-                <br />
-                <br />
                 </ul>
-              </div>
+              </div> */}
           </div>
           <div className="mt-auto w-full">
             {/* Botón de Stripe */}
@@ -77,8 +69,8 @@ export default function PricingSectionEs() {
               dangerouslySetInnerHTML={{
                 __html: `
                   <stripe-buy-button
-                    buy-button-id="buy_btn_1R7i0I2UJKuBEKUSjmYwwh9o"
-                    publishable-key="pk_test_51R7hFh2UJKuBEKUSXVN8qg7n1qVzO537DxKKYQJ0JIsia68N78JhhFLk4HSrgB4TGlxFe2MWomEfyZJGU9zb4qUk00AzEBzPie"
+                    buy-button-id="buy_btn_1RUC2pLpyguTlw9JFTbr7Yy9"
+                      publishable-key="pk_live_51R7q8qLpyguTlw9JUsunYgWZ7FVGe7dVcml7kuVNdi86zUonHoCee5C7gL5irZdPPpF913Asb9Jv5kqXyTiR9Z1000nIVbq7xY"
                   ></stripe-buy-button>
                 `,
               }}
@@ -86,15 +78,16 @@ export default function PricingSectionEs() {
           </div>
         </div>
 
-        {/* Plan ENTERPRISE */}
-        <div className="lg:w-[23rem] w-full border-2 lg:border-left-none border-gray-800 p-5">
+        {/* Plan 3 */}
+        <div className="lg:w-[28rem] w-full border-2 border-gray-800 p-8 mx-auto">
           <div className="pb-3 mb-4 border-b border-gray-800">
-            <div className="text-xs text-gray-400 mb-2">ENTERPRISE</div>
-            <div className="flex items-center">
-              <h2 className="text-5xl m-0 font-normal">$2,000</h2>
-              <span className="text-bluegray-300 ml-1">/USD per Monthly</span>
+            <div className="text-xs text-gray-400 mb-2"></div>
+            <div className="items-center">
+              <h2 className="text-2xl m-0 font-normal">Business</h2>
+              <h2 className="text-2xl m-0 font-normal">development</h2>
+              <span className="text-bluegray-300 ml-1"></span>
             </div>
-                <div>
+                {/* <div>
                 <ul>
                   <br />
                   <li>Buisness start-up</li>
@@ -104,7 +97,7 @@ export default function PricingSectionEs() {
                   <li>Depending upon type of request.</li>
                   <li>Full business strategy and management.</li>
                 </ul>
-              </div>
+              </div> */}
           </div>
           <div className="mt-auto w-full">
             {/* Botón de Stripe */}
@@ -112,8 +105,8 @@ export default function PricingSectionEs() {
               dangerouslySetInnerHTML={{
                 __html: `
                   <stripe-buy-button
-                    buy-button-id="buy_btn_1R7i0I2UJKuBEKUSjmYwwh9o"
-                    publishable-key="pk_test_51R7hFh2UJKuBEKUSXVN8qg7n1qVzO537DxKKYQJ0JIsia68N78JhhFLk4HSrgB4TGlxFe2MWomEfyZJGU9zb4qUk00AzEBzPie"
+                    buy-button-id="buy_btn_1RUC8ULpyguTlw9JuqTjZrEt"
+                    publishable-key="pk_live_51R7q8qLpyguTlw9JUsunYgWZ7FVGe7dVcml7kuVNdi86zUonHoCee5C7gL5irZdPPpF913Asb9Jv5kqXyTiR9Z1000nIVbq7xY"
                   ></stripe-buy-button>
                 `,
               }}
@@ -121,24 +114,16 @@ export default function PricingSectionEs() {
           </div>
         </div>
 
-                <div className="lg:w-[23rem] w-full border-2 lg:border-left-none border-gray-800 p-5">
+
+        {/* Plan 4 */}
+        <div className="lg:w-[28rem] w-full border-2 border-gray-800 p-8 mx-auto">
           <div className="pb-3 mb-4 border-b border-gray-800">
-            <div className="text-xs text-gray-400 mb-2">VIP</div>
-            <div className="flex items-center">
-              <h2 className="text-5xl m-0 font-normal">$10,000</h2>
-              <span className="text-bluegray-300 ml-1">/USD per Monthly</span>
+            <div className="text-xs text-gray-400 mb-2"></div>
+            <div className="items-center">
+              <h2 className="text-2xl m-0 font-normal">A1</h2>
+              <h2 className="text-2xl m-0 font-normal">Services</h2>
+              <span className="text-bluegray-300 ml-1"></span>
             </div>
-                <div>
-                <ul>
-                  <br />
-                  <li>Full package</li>
-                  <li>Media management and client relationship.</li>
-                  <li>Full business strategy and management.</li>
-                  <br />
-                  <br />
-                  <br />
-                </ul>
-              </div>
           </div>
           <div className="mt-auto w-full">
             {/* Botón de Stripe */}
@@ -146,14 +131,78 @@ export default function PricingSectionEs() {
               dangerouslySetInnerHTML={{
                 __html: `
                   <stripe-buy-button
-                    buy-button-id="buy_btn_1R7i0I2UJKuBEKUSjmYwwh9o"
-                    publishable-key="pk_test_51R7hFh2UJKuBEKUSXVN8qg7n1qVzO537DxKKYQJ0JIsia68N78JhhFLk4HSrgB4TGlxFe2MWomEfyZJGU9zb4qUk00AzEBzPie"
+                    buy-button-id="buy_btn_1RUCAsLpyguTlw9J8CgSsSwz"
+                    publishable-key="pk_live_51R7q8qLpyguTlw9JUsunYgWZ7FVGe7dVcml7kuVNdi86zUonHoCee5C7gL5irZdPPpF913Asb9Jv5kqXyTiR9Z1000nIVbq7xY"
                   ></stripe-buy-button>
                 `,
               }}
             />
           </div>
         </div>
+
+
+        {/* Plan 5 */}
+        <div className="lg:w-[28rem] w-full border-2 border-gray-800 p-8 mx-auto">
+          <div className="pb-3 mb-4 border-b border-gray-800">
+            <div className="text-xs text-gray-400 mb-2"></div>
+            <div className="items-center">
+              <h2 className="text-2xl m-0 font-normal">Business</h2>
+              <h2 className="text-2xl m-0 font-normal">Services</h2>
+              <span className="text-bluegray-300 ml-1"></span>
+            </div>
+          </div>
+          <div className="mt-auto w-full">
+            {/* Botón de Stripe */}
+            <div
+              dangerouslySetInnerHTML={{
+                __html: `
+                  <stripe-buy-button
+                    buy-button-id="buy_btn_1RUCE8LpyguTlw9JJJvN2Hu6"
+                    publishable-key="pk_live_51R7q8qLpyguTlw9JUsunYgWZ7FVGe7dVcml7kuVNdi86zUonHoCee5C7gL5irZdPPpF913Asb9Jv5kqXyTiR9Z1000nIVbq7xY"
+                  ></stripe-buy-button>
+                `,
+              }}
+            />
+          </div>
+        </div>
+
+
+        {/* Plan 6 */}
+        <div className="lg:w-[28rem] w-full border-2 border-gray-800 p-8 mx-auto">
+          <div className="pb-3 mb-4 border-b border-gray-800">
+            <div className="text-xs text-gray-400 mb-2"></div>
+            <div className="items-center">
+              <h2 className="text-2xl m-0 font-normal">Custom </h2>
+              <h2 className="text-2xl m-0 font-normal">Designs <span className="text-bluegray-100 ml-1">(illustration)</span></h2>
+              
+            </div>
+          </div>
+          <div className="mt-auto w-full">
+            {/* Botón de Stripe */}
+            <div
+              dangerouslySetInnerHTML={{
+                __html: `
+                  <stripe-buy-button
+                    buy-button-id="buy_btn_1RUCGZLpyguTlw9Jwr3jbCSz"
+                    publishable-key="pk_live_51R7q8qLpyguTlw9JUsunYgWZ7FVGe7dVcml7kuVNdi86zUonHoCee5C7gL5irZdPPpF913Asb9Jv5kqXyTiR9Z1000nIVbq7xY"
+                  ></stripe-buy-button>
+                `,
+              }}
+            />
+          </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
       </div>
     </section>
   );

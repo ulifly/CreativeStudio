@@ -22,7 +22,7 @@ export default function Footer() {
               <span className="text-blue-500">A1</span>Studio
             </Link>
             <p className="text-gray-300 mb-6">
-              Premium creative services for brands that want to make an impact. Our innovative platform is launching soon.
+              Servicios creativos premium para marcas que busquen causar impacto. plataforma de inovacion.
             </p>
 
           </div>
@@ -136,11 +136,11 @@ export default function Footer() {
         <div className="border-t border-slate-700 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="text-gray-400 text-sm mb-4 md:mb-0">
-              &copy; {currentYear} A1 Studio. All rights reserved.
+              &copy; {currentYear} A1 Studio. Todos los derechos reservados.
             </div>
             <div className="flex gap-6">
               {/* <a href="#" className="text-gray-400 hover:text-white text-sm transition-colors">Privacy Policy</a> */}
-              <a href="#" className="text-gray-400 hover:text-white text-sm transition-colors">Terms of Service</a>
+              <a href="#" className="text-gray-400 hover:text-white text-sm transition-colors">Termnos de servicio</a>
               <a href="#" className="text-gray-400 hover:text-white text-sm transition-colors">Cookie Policy</a>
             </div>
           </div>

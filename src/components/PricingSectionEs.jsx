@@ -15,7 +15,7 @@ export default function PricingSectionEs() {
 
   return (
     <section id="pricing" className="py-16 md:py-1 bg-slate-950 text-white">
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 lg:p-12 p-4 font-sans text-white bg-gray-900 justify-center">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:p-12 p-4 font-sans text-white bg-gray-900 justify-center">
         {/* Plan 1 */}
         <div className="lg:w-[28rem] w-full border-2 border-gray-800 p-8 mx-auto">
           <div className="pb-6 mb-4 border-b border-gray-800">
