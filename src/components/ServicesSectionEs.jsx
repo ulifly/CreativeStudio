@@ -24,13 +24,13 @@ const services = [
   // },
   {
     icon: <Paintbrush className="text-2xl text-blue-600 group-hover:text-white" />,
-    title: "Graphic Design",
-    description: "Creative visual designs across all mediums, from digital assets to print materials that enhance your brand."
+    title: "Diseño Gráfico",
+    description: "Diseño visual creativo en todos los medios, desde activos digitales hasta materiales impresos que mejoran tu marca."
   },
   {
     icon: <Megaphone className="text-2xl text-blue-600 group-hover:text-white" />,
     title: "Business Marketing",
-    description: "Data-driven marketing approaches to reach your target audience and achieve measurable results."
+    description: "Mercadotecnia basada en datos para alcanzar a tu audiencia objetivo y lograr resultados medibles."
   },
   // {
   //   icon: <Code className="text-2xl text-blue-600 group-hover:text-white" />,
@@ -40,7 +40,7 @@ const services = [
   {
     icon: <MessageSquare className="text-2xl text-blue-600 group-hover:text-white" />,
     title: "Linktree",
-    description: "Comprehensive social media management to build your online presence and engage with your community."
+    description: "Administración de redes sociales comprensible para construir tu presencia en línea y conectar con tu comunidad."
   }
 ];
 
@@ -70,9 +70,9 @@ export default function ServicesSection() {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <span className="text-blue-600 font-medium">What We Offer</span>
-          <h2 className="text-3xl md:text-4xl font-bold font-montserrat mt-2">Our Creative Services</h2>
-          <p className="text-slate-600 mt-4">Comprehensive production and marketing solutions tailored to elevate your brand</p>
+          <span className="text-blue-600 font-medium">Que ofrecemos</span>
+          <h2 className="text-3xl md:text-4xl font-bold font-montserrat mt-2">Nuestros servicio creativos</h2>
+          <p className="text-slate-600 mt-4">Soluciones integrales de producción y marketing diseñadas para elevar tu marca.</p>
         </motion.div>
 
         <motion.div

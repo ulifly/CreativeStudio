@@ -37,37 +37,37 @@ export default function AboutSection() {
             transition={{ duration: 0.6, delay: 0.2 }}
           >
             <span className="text-blue-600 font-medium">About Us</span>
-            <h2 className="text-3xl md:text-4xl font-bold font-montserrat">We're a team of creative professionals</h2>
+            <h2 className="text-3xl md:text-4xl font-bold font-montserrat">Somos un equipo de profesionales creativos</h2>
             <p className="text-slate-300">
-              At CreativeStudio, we believe in the power of innovative storytelling and visual excellence to transform brands. Our multi-disciplinary team brings together expertise across production, design, and marketing to deliver results that exceed expectations.
+              en CreativeStudio, creemos en el poder de contar historias inovadoras y excelencia visual para transformar las marcas. Nuestro equipo multi-disciplinario trae su talento a tu produccion, dideño, y marketing para exceder las expectativas.
             </p>
             <p className="text-slate-300">
-              With over a decade of experience working with brands across industries, we've developed a reputation for creativity, reliability, and measurable results. Our upcoming platform will make our services more accessible than ever before.
+              con la experiencia de mas de una decada trabajando con marcas de diferentes industrias, hemos desarrollado una reputacion por creatividad, confiabilidad, y resultados medibles. Nuestra proxima plataforma hara que nuestros servicios sean mas accesibles que nunca
             </p>
             
             <div className="grid grid-cols-2 gap-6 mt-8">
               <div className="bg-gray-400 p-4 rounded-lg">
                 <div className="text-3xl font-bold text-blue-700">250+</div>
-                <div className="text-slate-600">Projects Completed</div>
+                <div className="text-slate-600">Proyectos</div>
               </div>
               <div className="bg-gray-400 p-4 rounded-lg">
                 <div className="text-3xl font-bold text-blue-700">90%</div>
-                <div className="text-slate-600">Client Retention</div>
+                <div className="text-slate-600">Retencion de cleintes</div>
               </div>
               <div className="bg-gray-400 p-4 rounded-lg">
                 <div className="text-3xl font-bold text-blue-700">15</div>
-                <div className="text-slate-600">Industry Awards</div>
+                <div className="text-slate-600">premios de la industria</div>
               </div>
               <div className="bg-gray-400 p-4 rounded-lg">
                 <div className="text-3xl font-bold text-blue-700">24/7</div>
-                <div className="text-slate-600">Client Support</div>
+                <div className="text-slate-600">Soporte al cliente</div>
               </div>
             </div>
             
             <div className="pt-4">
-              <a href="#contact">
+              <a href="mailto:netww@proton.me" className="inline-block">
                 <Button className="bg-slate-600 hover:bg-slate-700 text-white   px-8 py-3 rounded-full ">
-                  Get In Touch
+                  contactanos
                 </Button>
               </a>
             </div>

@@ -66,8 +66,4 @@ id="buy_btn_1RUCE8LpyguTlw9JJJvN2Hu6"
 id="buy_btn_1RUCGZLpyguTlw9Jwr3jbCSz"
   publishable-key="pk_live_51R7q8qLpyguTlw9JUsunYgWZ7FVGe7dVcml7kuVNdi86zUonHoCee5C7gL5irZdPPpF913Asb9Jv5kqXyTiR9Z1000nIVbq7xY"
 
-
-
-footer es eng
-
-about eng es
+home ---> we offer
