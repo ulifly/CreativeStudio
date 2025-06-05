@@ -69,13 +69,13 @@ export default function HeroSection() {
           >
             {submitted ? (
               <div className="bg-white p-8 rounded-xl shadow-lg text-center">
-                <h3 className="text-2xl font-bold mb-2">Thank You!</h3>
-                <p className="text-slate-600 mb-4">Your message has been successfully sent.</p>
+                <h3 className="text-2xl font-bold mb-2">Gracias!</h3>
+                <p className="text-slate-600 mb-4">Tu mesaje se ha enviado coerrectamente.</p>
                 <Button
                   onClick={() => setSubmitted(false)}
                   className="bg-blue-600 hover:bg-blue-500"
                 >
-                  Send Another Message
+                  Enviar otro mensaje
                 </Button>
               </div>
             ) : (
@@ -87,9 +87,9 @@ export default function HeroSection() {
                       name="name"
                       render={({ field }) => (
                         <FormItem>
-                          <FormLabel>Full Name</FormLabel>
+                          <FormLabel>Nombre completo</FormLabel>
                           <FormControl>
-                            <Input placeholder="Your name" {...field} />
+                            <Input placeholder="tu nombre" {...field} />
                           </FormControl>
                           <FormMessage />
                         </FormItem>
@@ -100,9 +100,9 @@ export default function HeroSection() {
                       name="email"
                       render={({ field }) => (
                         <FormItem>
-                          <FormLabel>Email Address</FormLabel>
+                          <FormLabel>Correo electronico</FormLabel>
                           <FormControl>
-                            <Input placeholder="Your email" type="email" {...field} />
+                            <Input placeholder="tu email" type="email" {...field} />
                           </FormControl>
                           <FormMessage />
                         </FormItem>
@@ -114,9 +114,9 @@ export default function HeroSection() {
                     name="subject"
                     render={({ field }) => (
                       <FormItem>
-                        <FormLabel>Subject</FormLabel>
+                        <FormLabel>Asunto</FormLabel>
                         <FormControl>
-                          <Input placeholder="Subject" {...field} />
+                          <Input placeholder="aqui el asunto por el que nos contactas" {...field} />
                         </FormControl>
                         <FormMessage />
                       </FormItem>
@@ -127,9 +127,9 @@ export default function HeroSection() {
                     name="message"
                     render={({ field }) => (
                       <FormItem>
-                        <FormLabel>Message</FormLabel>
+                        <FormLabel>Mensaje</FormLabel>
                         <FormControl>
-                          <Textarea placeholder="Your message" {...field} rows={5} />
+                          <Textarea placeholder="detalla tu mensaje" {...field} rows={5} />
                         </FormControl>
                         <FormMessage />
                       </FormItem>
@@ -139,7 +139,7 @@ export default function HeroSection() {
                     type="submit" 
                     className="bg-blue-600 hover:bg-blue-500 text-white rounded-full"
                   >
-                    Send Message
+                    Enviar mensaje
                   </Button>
                 </form>
               </Form>
@@ -147,7 +147,7 @@ export default function HeroSection() {
           </motion.div>
 
           <motion.div
-            className="relative w-200 h-96 md:h-[500px] rounded-xl overflow-hidden shadow-2xl"
+            className="relative w-150 h-96 md:h-[500px] rounded-xl overflow-hidden shadow-2xl"
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.6, delay: 0.2 }}
